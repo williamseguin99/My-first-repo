@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Forum
+}
+
+.hero{
+    background-color: #f08e80;
+    min-height: 90vh;
+    display: inline-block;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    padding-bottom: 0;
+}
+
+.navbar h1{
+    Margin: 0;
+    Padding: 0;
+}
+
+.navbar .links a{
+    text-decoration: none;
+    color: white;
+    margin-right: 2rem;
+}
+
+.navbar .button {
+    color: #f08e80;
+    background-color: white;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+}
+
+.navbar .button:hover {opacity: 80%}
+
+.content-section{
+    padding: 0 20%;
+}
+
+.content-section h2 {
+    font-size: 4.5rem;
+    letter-spacing: 15%;
+    margin: 7.5% 0;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+}
+
+.content-section h3,
+.content-section p {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width:50%;
+    font-size: 2rem;
+    align-items: top;
+}
+
+.content-h3 {
+    display:flex;
+    justify-content: space-between;
+    align-items: top;
+    padding-bottom: 5%;
+}
+
+.list-h3 {
+    display:flex;
+    justify-content: space-between;
+    margin:0;
+    padding: 0;
+    width: 50%;
+}
+
+.list-h3 ul {
+    padding-inline-start: 0px;
+    margin: 0;
+}
+
+.list-h3 li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.list-h3sub {
+    display:flex;
+    width: 50%;
+    justify-content:left;
+    text-indent: 0%;
+}
+
+.list-h3sub ul li:last-of-type {
+    margin-bottom: 0px;
+}
+
+.blogs{
+    color: black;
+    background-color: white;
+    font-size: 1.2rem;
+    padding-top: 5%;
+}
+
+.blogs h3 {
+    display: inline-block;
+    width: 50%;
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0 ;
+}
+
+.blog-title{
+    width: 50%;
+}
+
+.blog-title p {
+    font-size: 1rem;
+    width: 100%;
+}
+
+.date {
+    color: grey;
+    margin: 0.5rem 0 2rem 0;
+}
+
+.events{
+    color: black;
+    background-color: #fdf0e6;
+    font-size: 1.2rem;
+    padding-top: 5%;
+}
+
