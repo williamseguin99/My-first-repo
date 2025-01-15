@@ -108,10 +108,11 @@ h2{
     padding-top: 5%;
 }
 
-.blogs h3 {
+h3 {
     display: inline-block;
     width: 50%;
     font-size: 2rem;
+    margin-top: 0;
 }
 
 h4 {
@@ -137,6 +138,21 @@ h4 {
     color: black;
     background-color: #fdf0e6;
     font-size: 1.2rem;
-    padding-top: 5%;
+    padding: 5% 20% 0 20%
 }
 
+.footer {
+    background-color: black;
+    padding: 5rem;
+    color:white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footer img{
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+.footer p {margin:0}
