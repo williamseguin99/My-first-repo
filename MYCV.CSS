@@ -80,3 +80,26 @@ header li a {
     font-size: inherit;
     cursor: pointer;
 }
+
+/* adding responsive support */
+
+@media only screen and (min-width: 1025px) {
+  /* Styles tablets */
+  header-mobile {
+    display:none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles tablets */
+  header {
+    ...
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Styles tablets */
+  header-mobile {
+    styles
+  }
+}
