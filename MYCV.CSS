@@ -6,10 +6,30 @@
     src: url('/Fonts/AttenRoundNewBold.otf') format('opentype');
     font-weight: 700}
 
+@import 'font-awesome/css/font-awesome.min.css';
+
 :root {
-    --color-1: #dab900;
-    --color-2: #ffffff;
-    --color-3: #000000}
+    /* Main color */
+    --color-1: #E16A54;
+    /* Light color */
+    --color-2: #fff5f5;
+     /*Dark color  */
+    --color-3: #220011;}
+    
+    /*  Brown variation
+    --color-1: #E16A54;
+    --color-2: #F39E60;
+    --color-3: #2d0e01; */
+
+    /*  Blue variation
+    --color-1: #6886C5;
+    --color-2: #F9F9F9;
+    --color-3: #031946; */
+
+    /*  VISA colors variation
+    --color-1: #fcd356;
+    --color-2: #FFF2CC;
+    --color-3: #010e28; */
 
 body {
     padding:0;
@@ -61,7 +81,7 @@ header a:hover {
     transition: 0.25s}
 
 html {
-        scroll-padding-top: 70px; /* Adjust the value as needed */}
+        scroll-padding-top: 60px; /* Adjust the value as needed */}
       
 header ul{
     list-style: none;
@@ -87,37 +107,45 @@ header li a {
     margin: 0}
 
 .hero{
-    height: 75vh;
-    min-height: 650px;
     background-color: var(--color-3);
     color: var(--color-2)}
+
+.hero a{
+    color: inherit;
+    padding-bottom: 0.15rem;
+    border-bottom: solid var(--color-1) 0.25rem;
+    text-decoration: none;}
 
 .hero h2 {
     padding: 0;
     margin: 0 0 10% 0;
     text-align: right;
-    font-size: clamp(3rem, 3.5vw, 72px);
+    hyphens: none;
+    font-size: clamp(3rem, 3vw, 72px);
     font-weight: 400}
 
 .hero em{
     color: var(--color-1)}
 
 .content{
-    margin-bottom:7.5%;
+    padding-bottom:10%;
     display: flex}
+
+h3{    
+    font-size: 2.5rem}
 
 .titles h3{
     padding: 0;
     margin: 0;
-    font-size: 2.5rem;
     font-weight: 700}
 
 .titles{
-    width:50%}
+    width:40%}
 
 .text{
     font-size:1.5rem;
-    width:50%}
+    transform: translateY(0.6REM);
+    width:60%}
 
 .text ul {
     margin:0;
@@ -134,20 +162,23 @@ header li a {
     width:50%}
 
 .experiences{
-    height: 90vh;
-    min-height: 900px;
     background-color: var(--color-1);
     color: var(--color-3)}
-    
+
+.experiences .content {
+    background-color: var(--color-1);}    
+
 h4{
     margin:0 0 0.5rem 0; 
     padding: 0;
     font-size: 2rem}
 
 .experience{
-    width: 50%}
+    transform: translateY(0.65REM);
+    width: 60%}
 
 .experiences a{
+    display: inline-block;
     padding:0 0 0.5rem 0;
     position: relative;
     text-decoration: none;
@@ -161,7 +192,7 @@ h4{
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: black;
+        background-color: var(--color-3);
         transform-origin: left;
         transition: transform 0.4s ease-out}
 
@@ -169,12 +200,13 @@ h4{
   transform: scaleX(0); /* Shrinks the border to 0 width */
   transform-origin: left; /* Disappears from left to right */}
 
-.experience img{
+.experience svg{
     display: inline-block;
     position: relative;
     bottom: -0.25rem;
-    height: 1.5rem}
-
+    height: 1.5rem;
+    stroke: var(--color-3);}
+    
 .experience p {
     font-size: 1rem;
     padding-top: 0.5rem;}
@@ -183,8 +215,83 @@ h4{
     font-weight: 700}
 
  .job{
-    margin: 0 0 3.5rem 0}   
+    margin: 0 0 7.5% 0}   
+
+.job:last-child{
+    margin:0}
 
  .date{
     color: var(--color-3);
     opacity: 50%}
+
+.education{
+    background-color: var(--color-2);
+    color: var(--color-3);}
+
+.edu{
+    margin: 0 0 7.5% 0}
+
+.edu:last-child{
+    margin:0}
+
+.edu p {
+    margin: 0.5rem 0;
+    padding:0 0 0 0}
+
+.more{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-3);
+    color: var(--color-2)}
+
+.facts{
+    transform: translateY(0.65REM);
+    width:60%;}
+
+.fact{
+    margin-bottom: 7.5%;}
+
+.facts p {
+    margin: 0.5rem 0 ;}
+
+.fact h4 {
+    text-transform: capitalize}
+
+footer {
+    background-color: var(--color-1);
+    height: 5rem;
+    font-size: 1rem;
+    padding: 0 1.5%;
+    margin: 0px;
+    color: var(--color-3);
+    /* border-bottom: solid var(--color-1) 0.5rem; */
+    /* border-top:  solid var(--color-2) 0.5rem ; */
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fact:last-child{
+    margin:0}
+
+.icons {
+    display: flex;
+    position: absolute;
+    font-size: 0;
+    margin: 0;
+    padding: 0 ;
+    left: 50%;
+    transform: translateX(-50%)}
+
+
+footer svg{
+    height: 2.5rem;
+    width: 100%;
+    fill: var(--color-3);
+    margin: 0 2rem;
+    transition: all 0.5s}
+
+footer svg:hover{
+    transform: scale(1.2);
+    filter: invert(100%);}
