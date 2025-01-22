@@ -14,7 +14,7 @@
     /* Light color */
     --color-2: #fff5f5;
      /*Dark color  */
-    --color-3: #220011;}
+    --color-3: #400021;}
     
     /*  Brown variation
     --color-1: #E16A54;
@@ -51,6 +51,22 @@ header {
     position: relative;
     align-items: center;
     justify-content: space-between}
+
+header ::selection, .education ::selection{
+    background-color: var(--color-1);
+    color: var(--color-2);}
+    
+.hero ::selection, .more ::selection{
+    background-color: var(--color-2);
+    color: var(--color-1)}
+
+.hero em::selection{
+    background-color: var(--color-2);
+    color: var(--color-3);}
+
+.experiences ::selection, footer ::selection{
+    background-color: var(--color-3);
+    color: var(--color-2)}
 
 h1{
     font-weight: 700;
@@ -103,7 +119,7 @@ header li a {
     cursor: pointer;}
 
 .main{
-    padding: 5% 20% 0 20%;
+    padding: 5% 15% 0 15%;
     margin: 0}
 
 .hero{
@@ -119,6 +135,7 @@ header li a {
 .hero h2 {
     padding: 0;
     margin: 0 0 10% 0;
+    padding-left: 20%;
     text-align: right;
     hyphens: none;
     font-size: clamp(3rem, 3vw, 72px);
@@ -290,8 +307,8 @@ footer svg{
     width: 100%;
     fill: var(--color-3);
     margin: 0 2rem;
-    transition: all 0.5s}
+    transition: all 0.4s ease-out}
 
 footer svg:hover{
     transform: scale(1.2);
-    filter: invert(100%);}
+    fill: var(--color-2);}
