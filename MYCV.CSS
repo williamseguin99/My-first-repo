@@ -34,8 +34,10 @@
 body {
     padding:0;
     margin:0;
+    width: 100%;
     hyphens:auto;
     font-family:'Atten';
+    overflow-x: hidden;
     font-weight: 400}
 
 header {
@@ -97,7 +99,8 @@ header a:hover {
     transition: 0.25s}
 
 html {
-        scroll-padding-top: 60px; /* Adjust the value as needed */}
+    width: 100%;    
+    scroll-padding-top: 60px; /* Adjust the value as needed */}
       
 header ul{
     list-style: none;
@@ -120,6 +123,7 @@ header li a {
 
 .main{
     padding: 5% 15% 0 15%;
+    /* width: 100%; */
     margin: 0}
 
 .hero{
@@ -128,17 +132,16 @@ header li a {
 
 .hero a{
     color: inherit;
-    padding-bottom: 0.15rem;
+    padding-bottom: 0.1rem;
     border-bottom: solid var(--color-1) 0.25rem;
     text-decoration: none;}
 
 .hero h2 {
     padding: 0;
     margin: 0 0 10% 0;
-    padding-left: 20%;
-    text-align: right;
+    text-align: left;
     hyphens: none;
-    font-size: clamp(3rem, 3vw, 72px);
+    font-size: 4.5rem;
     font-weight: 400}
 
 .hero em{
@@ -146,9 +149,11 @@ header li a {
 
 .content{
     padding-bottom:10%;
+    height: auto;
     display: flex}
 
-h3{    
+h3{
+    margin: 0;
     font-size: 2.5rem}
 
 .titles h3{
@@ -161,6 +166,7 @@ h3{
 
 .text{
     font-size:1.5rem;
+    text-align: justify;
     transform: translateY(0.6REM);
     width:60%}
 
@@ -222,7 +228,7 @@ h4{
     position: relative;
     bottom: -0.25rem;
     height: 1.5rem;
-    stroke: var(--color-3);}
+    stroke: var(--color-3)}
     
 .experience p {
     font-size: 1rem;
@@ -239,7 +245,7 @@ h4{
 
  .date{
     color: var(--color-3);
-    opacity: 50%}
+    opacity: 75%}
 
 .education{
     background-color: var(--color-2);
@@ -254,6 +260,8 @@ h4{
 .edu p {
     margin: 0.5rem 0;
     padding:0 0 0 0}
+
+.edu-small {display: none}    
 
 .more{
     display: flex;
@@ -286,8 +294,7 @@ footer {
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: space-between;
-}
+    justify-content: space-between;}
 
 .fact:last-child{
     margin:0}
@@ -301,6 +308,8 @@ footer {
     left: 50%;
     transform: translateX(-50%)}
 
+footer a {display: flex; 
+    justify-content: center}
 
 footer svg{
     height: 2.5rem;
@@ -312,3 +321,134 @@ footer svg{
 footer svg:hover{
     transform: scale(1.2);
     fill: var(--color-2);}
+
+.button{
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--color-3);
+    border: 2.5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    bottom: 5%;
+    right: 10%;
+    display: none;
+    border-radius: 50%}
+
+.button a {
+    display: flex;
+    align-items: center}
+
+.button svg {
+    width: 2rem;
+    fill: var(--color-2)}
+
+@media only screen and (max-width: 1350px) {
+    .hero h2 {padding-left: 0%}}
+
+@media only screen and (max-width: 1200px) {
+    header li {margin-right: 1rem}
+    .main{padding: 5% 10% 0 10%;}}
+
+@media only screen and (max-width: 1100px) {
+    header li {margin-right: 0.5rem}
+    .main{padding: 5% 5% 0 5%;}
+    header {padding-right: 2.5%}
+    footer {padding: 0 2.5%}}
+
+@media only screen and (max-width: 1000px) {
+    nav{display: none}
+    header a {margin-left: auto}
+    .hero h2 {font-size: 4rem}}
+
+@media only screen and (max-width: 850px) {
+    .hero h2 {font-size: 3.5rem}}
+
+@media only screen and (max-width: 800px) {
+    .titles{width:35%}
+    .text{width:65%}}
+
+@media only screen and (max-width: 750px) {
+    .hero h2 {font-size: 3rem; hyphens: auto}}
+
+@media only screen and (max-width: 700px) {
+    .titles {margin-bottom: 2rem}
+    .content {flex-wrap: wrap; width: 100%}
+    .experience {width: 100%}
+    .facts {width: 100%}
+    .job h4 {width: 100%}
+    .position {display: flex; width: 100%}
+    .position a {flex-shrink: 0; padding-left: 0.5rem}
+    .job p, .fact p {text-align: justify}
+    .experiences h3 {text-align: center;
+        display: inline-block;
+        background-color: var(--color-3);
+        padding: 1rem 2.5rem;
+        border-radius: 4.5rem;
+        color: var(--color-1)}
+    .education h3 {text-align: center;
+        display: inline-block;
+        background-color: var(--color-3);
+        padding: 1rem 2.5rem;
+        border-radius: 4.5rem;
+        color: var(--color-2)}
+    .more h3 {text-align: center;
+        display: inline-block;
+        background-color: var(--color-2);
+        padding: 1rem 2.5rem;
+        border-radius: 4.5rem;
+        color: var(--color-3)}             
+    .experiences .titles {
+        margin-bottom: 3rem;
+        margin-top: 1.5rem} 
+    .education .titles, .more .titles {
+        margin-bottom: 2rem;
+        margin-top: 1.5rem}
+    .titles {width: 100%; 
+        display: flex; 
+        justify-content: center}
+    .job, .fact {width: 100%; 
+        display: flex;
+        flex-wrap: wrap; 
+        margin-bottom: 3rem;
+        justify-content: center}
+    .edu {width: 100%; 
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center}
+    .edu p {width: 100%; text-align: center}
+    .edu h4 {text-align: center}
+    .experiences .date {width: 100%}
+    .ul {margin-top: 1rem}
+    .ul {text-align: center}
+    .hero h2 {margin-bottom: 5rem}
+    .text, .facts, .experience {
+        width: 100%; 
+        transform: translateY(0)}}
+
+@media only screen and (max-width: 650px) {
+    header a {display: none}
+    .more, .education, .experiences {padding-bottom: 1.5rem}
+    .button {display: flex}
+    footer p{display: none}
+    .icons {width: 100%; justify-content: center;}
+    h1{width: 100%; text-align: center}}
+
+@media only screen and (max-width: 500px) {
+    .text {font-size: 1rem}
+    .hero a {border-bottom: solid var(--color-1) 0.15rem}
+    .hero h2 {margin-bottom: 3rem; font-size: 2rem; text-align: center}
+    .ul {margin-top: 0.25rem}
+    .hero .titles {margin-bottom: 1rem}
+    .hero h3, h4 {font-size: 1.5rem}
+    .experience h4 {transform: translateY(-0.35rem);}
+    .experiences a {font-size: 1rem; padding-bottom: 0}
+    .experiences a::after {bottom: 0.5rem}
+    .experience svg{bottom: 0.15rem}
+    .job p {margin-top: 0}
+    p {text-align: justify}
+    .edu:last-of-type p:first-of-type {display: none}
+    .edu-small {display: block} 
+}
