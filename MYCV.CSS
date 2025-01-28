@@ -308,7 +308,8 @@ footer {
     left: 50%;
     transform: translateX(-50%)}
 
-footer a {display: flex; 
+footer a {
+    display: flex; 
     justify-content: center}
 
 footer svg{
@@ -423,13 +424,14 @@ footer svg:hover{
     .experiences .date {width: 100%}
     .ul {margin-top: 1rem}
     .ul {text-align: center}
-    .hero h2 {margin-bottom: 5rem}
+    .hero h2 {margin-bottom: 4rem}
     .text, .facts, .experience {
         width: 100%; 
         transform: translateY(0)}}
 
 @media only screen and (max-width: 650px) {
     header a {display: none}
+    .hero h2 span {display: none}
     .more, .education, .experiences {padding-bottom: 1.5rem}
     .button {display: flex}
     footer p{display: none}
@@ -450,5 +452,4 @@ footer svg:hover{
     .job p {margin-top: 0}
     p {text-align: justify}
     .edu:last-of-type p:first-of-type {display: none}
-    .edu-small {display: block} 
-}
+    .edu-small {display: block}}
