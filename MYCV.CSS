@@ -441,7 +441,7 @@ footer svg:hover{
 @media only screen and (max-width: 500px) {
     .text {font-size: 1rem}
     .hero a {border-bottom: solid var(--color-1) 0.15rem}
-    .hero h2 {margin-bottom: 2rem; font-size: 2rem; text-align: center}
+    .hero h2 {margin-bottom: 2.5rem; font-size: 2rem; text-align: center}
     .ul {margin-top: 0.25rem}
     .hero .titles {margin-bottom: 1rem}
     .hero h3, h4 {font-size: 1.5rem}
