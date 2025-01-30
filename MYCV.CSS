@@ -457,7 +457,9 @@ footer svg:hover{
     .edu:last-of-type p:first-of-type {display: none}
     .edu:last-of-type .edu-small {display: block}
     .edu:last-of-type h4:first-of-type {display: none}
-}
+    .edu h4 {margin-bottom: 0}
+    .edu {margin-bottom: 2.5rem}
+    .education .titles {margin-bottom: 3rem; margin-top: 1.5rem}}
 
 @media only print {
     header a, footer {display: none}
