@@ -455,7 +455,9 @@ footer svg:hover{
     .job p {margin-top: 0}
     p {text-align: justify}
     .edu:last-of-type p:first-of-type {display: none}
-    .edu-small {display: block}}
+    .edu:last-of-type .edu-small {display: block}
+    .edu:last-of-type h4:first-of-type {display: none}
+}
 
 @media only print {
     header a, footer {display: none}
