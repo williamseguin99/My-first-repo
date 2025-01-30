@@ -346,6 +346,9 @@ footer svg:hover{
     width: 2rem;
     fill: var(--color-2)}
 
+.print-footer {
+    display: none}    
+
 @media only screen and (max-width: 1350px) {
     .hero h2 {padding-left: 0%}}
 
@@ -453,3 +456,64 @@ footer svg:hover{
     p {text-align: justify}
     .edu:last-of-type p:first-of-type {display: none}
     .edu-small {display: block}}
+
+@media only print {
+    header a, footer {display: none}
+    .hero h2 {font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center}
+    .hero span {display: none}
+    .hero a {border-bottom-width: 2px}
+    .titles h3, h4 {font-size: 1.5rem}
+    .experiences a {font-size: 1.25rem}
+    .text, .facts, .experience {font-size: 1rem; transform: translateY(0)}
+    .main {padding: 2.5rem 5%}
+    .content {padding-bottom: 0}
+    .hero .content {width: 50%}
+    .hero .titles {width: 100%; 
+        display: flex; 
+        justify-content: center;
+        height: 2.5rem;}
+    .text {width: 100%}
+    .content {flex-wrap: wrap; width: 100%}
+    .hero-blocks {display: flex}
+    .experience {
+        width: 100%;
+        display: flex; 
+        justify-content: space-between}
+    .job, .edu {width: 30%; 
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start}
+    .date {margin-top: auto}
+    .edu .date {color: var(--color-2)}
+    .edu p:first-of-type {display: none}
+    .edu:last-of-type h4:first-of-type, .edu:first-of-type h4:first-of-type {display: none}
+    .edu-small {display: block}
+    .education {color: var(--color-2); background-color: var(--color-3);}
+    .job p {text-align: justify; margin: 0.5rem 0 1rem 0}
+    .job svg {display: none}
+    .position {justify-content: center}
+    .experiences .titles, .education .titles {width: 100%; display: flex; justify-content: center;}
+    .experiences h3, .education h3, .more {display: none}
+    ul {text-align: center; transform: translateY(0.15rem);}
+    .ul li {margin-bottom: 0.35rem}
+    body {height: 100vh}
+    .print-footer {
+        background-color: var(--color-2);
+        padding: 0 5%;
+        color: var(--color-3);
+        justify-content: space-between;
+        display: flex}
+    .print-footer span {
+        margin: 1.5rem 0 2rem 0; 
+        width: 30%;
+        justify-content: center;
+        display: flex}
+    .print-footer svg {
+        height: 1rem; 
+        margin-right: 0.5rem;
+        fill: var(--color-3);
+        transform: translateY(0.2rem)}
+    .print-footer a {text-decoration: none; color: inherit}}
+
+/* That's all folks! */
