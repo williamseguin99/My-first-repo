@@ -16,20 +16,22 @@
      /*Dark color  */
     --color-3: #400021;}
     
-    /*  Brown variation
-    --color-1: #E16A54;
+    /*  Brown variation */
+/* :root {--color-1: #E16A54;
     --color-2: #F39E60;
-    --color-3: #2d0e01; */
+    --color-3: #2d0e01;}  */
 
-    /*  Blue variation
-    --color-1: #6886C5;
+     /* Blue variation */
+     :root {--color-1: #b6c6e8;
     --color-2: #F9F9F9;
-    --color-3: #031946; */
+    --color-3: #031946;}
 
-    /*  VISA colors variation
-    --color-1: #fcd356;
+     /* IKEA colors variation */
+/* :root {--color-1: #fcd356;
     --color-2: #FFF2CC;
-    --color-3: #010e28; */
+    --color-3: #010e28;} */
+
+html {scroll-behavior: smooth}    
 
 body {
     padding:0;
@@ -217,7 +219,7 @@ h4{
         height: 2px;
         background-color: var(--color-3);
         transform-origin: left;
-        transition: transform 0.4s ease-out}
+        transition: transform 0.2s ease-out}
 
 .experiences a:hover::after {
   transform: scaleX(0); /* Shrinks the border to 0 width */
@@ -231,8 +233,10 @@ h4{
     stroke: var(--color-3)}
     
 .experience p {
-    font-size: 1rem;
-    padding-top: 0.5rem;}
+    font-size: 1.5rem;
+    /* padding-top: 0.5rem; */
+    margin: 1rem 0;
+}
 
 .experiences a:hover{
     font-weight: 700}
@@ -245,6 +249,7 @@ h4{
 
  .date{
     color: var(--color-3);
+    font-size: 1.25rem;
     opacity: 75%}
 
 .education{
@@ -277,7 +282,8 @@ h4{
     margin-bottom: 7.5%;}
 
 .facts p {
-    margin: 0.5rem 0 ;}
+    margin: 0.5rem 0 ;
+    font-size: 1.5rem;}
 
 .fact h4 {
     text-transform: capitalize}
@@ -317,7 +323,7 @@ footer svg{
     width: 100%;
     fill: var(--color-3);
     margin: 0 2rem;
-    transition: all 0.4s ease-out}
+    transition: all 0.15s ease-out}
 
 footer svg:hover{
     transform: scale(1.2);
@@ -442,7 +448,7 @@ footer svg:hover{
     h1{width: 100%; text-align: center}}
 
 @media only screen and (max-width: 500px) {
-    .text {font-size: 1rem}
+    .text, .job p, .edu p, .date, .facts p {font-size: 1rem}
     .hero a {border-bottom: solid var(--color-1) 0.15rem}
     .hero h2 {margin-bottom: 2.5rem; font-size: 2rem; text-align: center}
     .ul {margin-top: 0.25rem}
