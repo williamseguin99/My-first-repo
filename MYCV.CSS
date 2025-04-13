@@ -33,6 +33,12 @@
     --color-3: #031946;
 }
 
+:root {
+    --color-1: #ffba7a;
+    --color-2: #e4d2d2;
+    --color-3: #5E0B15;
+}
+
 /* IKEA colors variation */
 /* :root {--color-1: #fcd356;
     --color-2: #FFF2CC;
