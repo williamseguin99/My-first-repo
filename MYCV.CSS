@@ -35,7 +35,7 @@
 
 :root {
     --color-1: #ffba7a;
-    --color-2: #e4d2d2;
+    --color-2: #ebe6e6;
     --color-3: #5E0B15;
 }
 
@@ -633,8 +633,8 @@ footer svg:hover {
     }
 
     .hero .content:first-of-type .text {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 7%;
+        padding-right: 7%;
     }
 
     .hero .content:first-of-type {
