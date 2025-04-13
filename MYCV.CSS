@@ -904,6 +904,10 @@ footer svg:hover {
         margin-bottom: 2.5rem
     }
 
+    .text p .ul li{
+        line-height: 1.15rem ;
+    }
+
     /* 
     .education .titles {
         margin-bottom: 3rem;
