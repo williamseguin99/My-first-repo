@@ -908,6 +908,12 @@ footer svg:hover {
         margin-bottom: 2.5rem
     }
 
+    .hero .header h2{
+    font-size: 1.5rem;
+    line-height: 1.15;
+    width: 300px;
+    }
+
     /* 
     .education .titles {
         margin-bottom: 3rem;
