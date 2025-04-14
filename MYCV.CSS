@@ -583,7 +583,7 @@ footer svg:hover {
 
 @media only screen and (max-width: 800px) {
   .hero h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -628,7 +628,7 @@ footer svg:hover {
   .hero .header h2 {
     text-align: center;
     margin-bottom: 10%;
-    width: 425px;
+    width: 444px;
   }
 
   .header {
