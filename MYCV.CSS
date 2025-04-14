@@ -188,7 +188,7 @@ header li a {
     text-align: left;
     hyphens: none;
     line-height: 1.35em;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 400;
     margin: 0;
 }
@@ -549,7 +549,7 @@ footer svg:hover {
     }
 
     .hero h2 {
-        font-size: 3rem
+        font-size: 2.75rem
     }
 
     .main {
@@ -568,7 +568,7 @@ footer svg:hover {
     }
 
     .hero h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         width: 522px;
     }
 
@@ -911,7 +911,7 @@ footer svg:hover {
     .hero .header h2{
     font-size: 1.5rem;
     line-height: 1.15;
-    width: 300px;
+    width: 350px;
     }
 
     /* 
